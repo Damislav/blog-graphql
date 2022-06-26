@@ -24,10 +24,13 @@ function MyApp({ Component, pageProps }) {
               page_path: window.location.pathname,
             });
                 `}
-        {/* {console.log("analytics started")} */}
       </Script>
       <Head>
         <title>Unreal Blog</title>
+        <meta
+          name="google-site-verification"
+          content="ISpXxLlfRiP7Sx7AMDuy5H4z8A6mX4eNHETgqEpU4p8"
+        />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Component {...pageProps} />

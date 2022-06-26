@@ -10,11 +10,13 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta property="og:title" content="My page title" key="title" />
           <meta
-            name="google-site-verification"
-            content="ISpXxLlfRiP7Sx7AMDuy5H4z8A6mX4eNHETgqEpU4p8"
+            name="description"
+            content="Learning Unreal Engine 4 can be real easy. "
           />
         </Head>
+
         <body>
           <Main />
           <NextScript />
