@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
 import Link from "next/link";
 import { getCategories } from "../services";
 import SearchBar from "./SearchBar";
+import ThemeContext from "../context/Theme/ThemeContext";
 
 const Header = () => {
+  const { isDark, handleDarkTheme } = useContext(ThemeContext);
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -19,12 +21,12 @@ const Header = () => {
         <div className="md:float-left block">
           <Link href="/">
             <span className="cursor-pointer font-bold text-4xl text-white">
-              Graph CMS
+              Unreal Dev
             </span>
           </Link>
         </div>
+
         <div className="hidden md:float-left md:contents">
-          <SearchBar />
           {categories.map((category, index) => (
             <Link key={index} href={`/category/${category.slug}`}>
               <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">

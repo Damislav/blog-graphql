@@ -10,11 +10,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta property="og:title" content="My page title" key="title" />
+          {/* <meta property="og:title" content="My page title" key="title" />
           <meta
             name="description"
             content="Learning Unreal Engine 4 can be real easy. "
-          />
+          /> */}
         </Head>
 
         <body>
